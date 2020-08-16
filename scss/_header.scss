@@ -75,12 +75,11 @@
 		overflow: hidden;
 	}
 	.header:before {
-		background-color: black;
+		background-color: #2b0707;
 	}
 	.header__body {
 		height: 50px;
-	}
-	.header__logo {
+		justify-content: flex-end;
 	}
 	.header__burger {
 		display: block;

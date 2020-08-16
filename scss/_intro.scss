@@ -20,6 +20,7 @@
 	color: $color-white;
 	margin: 25px auto auto 180px;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+	text-align: center;
 }
 
 .intro__text {
@@ -42,5 +43,46 @@
 	}
 	&:after {
 		margin-left: 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	.intro__title {
+		font-size: 130px;
+		margin: auto;
+	}
+	.intro__text {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 577px) {
+	.intro__inner {
+		border: 2px solid $color-bordo;
+	}
+	.intro__title {
+		font-size: 100px;
+	}
+	.intro__text {
+		display: none;
+	}
+}
+
+@media (max-width: 380px) {
+	.intro__title {
+		font-size: 80px;
+	}
+}
+
+@media (orientation: landscape) and (max-width: 896px) {
+	.intro__title {
+		font-size: 80px;
+		margin: auto;
+	}
+}
+
+@media (orientation: landscape) and (max-width: 568px) {
+	.intro__title {
+		font-size: 55px;
 	}
 }
