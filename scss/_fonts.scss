@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+@font-face {
+	font-family: "Georgia";
+	src: url("../fonts/georgia.eot");
+	src: local("☺"), url("../fonts/georgia.woff") format("woff"), url("../fonts/georgia.ttf") format("truetype"),
+		url("../fonts/georgia.svg") format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "GeorgiaBold";
+	src: url("../fonts/georgiab.eot");
+	src: local("☺"), url("../fonts/georgiab.woff") format("woff"), url("../fonts/georgiab.ttf") format("truetype"),
+		url("../fonts/georgiab.svg") format("svg");
+	font-weight: 700;
+	font-style: normal;
+}

@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 *,
 *:before,
 *:after {
@@ -199,9 +201,26 @@ textarea {
   display: none;
 }
 
+@font-face {
+  font-family: "Georgia";
+  src: url("../fonts/georgia.eot");
+  src: local("☺"), url("../fonts/georgia.woff") format("woff"), url("../fonts/georgia.ttf") format("truetype"), url("../fonts/georgia.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GeorgiaBold";
+  src: url("../fonts/georgiab.eot");
+  src: local("☺"), url("../fonts/georgiab.woff") format("woff"), url("../fonts/georgiab.ttf") format("truetype"), url("../fonts/georgiab.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: #790bf6;
+  font-family: "Lato", sans-serif;
+  color: #505050;
+  font-size: 14px;
 }
 
 .wrapper {
@@ -209,7 +228,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   padding: 0px 15px;
   margin: 0 auto;
 }
@@ -229,6 +248,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: white;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   z-index: 3;
@@ -270,11 +290,11 @@ body {
 
 .header__list li .header__link {
   color: #909090;
-  font-size: 16px;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-  padding: 0px 8px 16px;
+  padding: 0px 8px 23px;
   position: relative;
+  font-weight: 700;
 }
 
 .header__list li .header__link:after {
@@ -393,4 +413,64 @@ body {
   .header__menu.active {
     right: 0%;
   }
+}
+
+.intro {
+  margin-top: 70px;
+  background-image: url(../images/intro-back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  padding: 50px 40px;
+}
+
+.intro__inner {
+  height: 100%;
+  border: 2px solid #8c001a;
+  border-bottom: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.intro__title {
+  font-size: 162px;
+  font-family: "GeorgiaBold";
+  color: #fff;
+  margin: 25px auto auto 180px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.intro__text {
+  color: #fff;
+  font-family: "Georgia";
+  font-size: 24px;
+  margin-bottom: -12px;
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+}
+
+.intro__text:after, .intro__text:before {
+  content: "";
+  border-top: 2px solid #8c001a;
+  width: 100%;
+}
+
+.intro__text:before {
+  margin-right: 30px;
+}
+
+.intro__text:after {
+  margin-left: 30px;
 }

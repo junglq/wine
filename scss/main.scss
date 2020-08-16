@@ -4,8 +4,9 @@
 @import "_vars.scss";
 
 body {
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	color: rgb(121, 11, 246);
+	font-family: "Lato", sans-serif;
+	color: $color-text;
+	font-size: 14px;
 }
 
 .wrapper {
@@ -13,9 +14,10 @@ body {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1000px;
 	padding: 0px 15px;
 	margin: 0 auto;
 }
 
 @import "_header.scss";
+@import "_intro.scss";

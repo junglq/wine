@@ -1,0 +1,46 @@
+.intro {
+	margin-top: 70px;
+	background-image: url(../images/intro-back.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+	padding: 50px 40px;
+}
+.intro__inner {
+	height: 100%;
+	border: 2px solid $color-bordo;
+	border-bottom: none;
+	display: flex;
+	flex-direction: column;
+}
+.intro__title {
+	font-size: 162px;
+	font-family: "GeorgiaBold";
+	color: $color-white;
+	margin: 25px auto auto 180px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.intro__text {
+	color: $color-white;
+	font-family: "Georgia";
+	font-size: 24px;
+	margin-bottom: -12px;
+	text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	&:after,
+	&:before {
+		content: "";
+		border-top: 2px solid $color-bordo;
+		width: 100%;
+	}
+	&:before {
+		margin-right: 30px;
+	}
+	&:after {
+		margin-left: 30px;
+	}
+}
