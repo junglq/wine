@@ -1,0 +1,21 @@
+@import "_reset.scss";
+@import "_normalize.scss";
+@import "_fonts.scss";
+@import "_vars.scss";
+
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: rgb(121, 11, 246);
+}
+
+.wrapper {
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+
+@import "_header.scss";
