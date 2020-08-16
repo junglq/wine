@@ -295,6 +295,7 @@ body {
   padding: 0px 8px 23px;
   position: relative;
   font-weight: 700;
+  overflow: hidden;
 }
 
 .header__list li .header__link:after {
