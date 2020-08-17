@@ -292,7 +292,7 @@ body {
   color: #909090;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-  padding: 0px 8px 23px;
+  padding: 26px 8px 23px;
   position: relative;
   font-weight: 700;
   overflow: hidden;
@@ -518,5 +518,139 @@ body {
 @media (orientation: landscape) and (max-width: 568px) {
   .intro__title {
     font-size: 55px;
+  }
+}
+
+.reason {
+  padding: 100px 0px;
+}
+
+.reason__row-top {
+  margin-bottom: 140px;
+}
+
+.block__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reason__title {
+  font-size: 32px;
+  color: #4e5665;
+  font-family: "Georgia";
+}
+
+.reason__block {
+  max-width: 536px;
+}
+
+.reason__text {
+  line-height: 1.75;
+  font-size: 16px;
+}
+
+.reason__link {
+  line-height: 1.75;
+  font-size: 16px;
+  color: #8c001a;
+  font-weight: 700;
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+
+.reason__link:hover {
+  opacity: 0.7;
+}
+
+.reason__stat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.reason__item {
+  text-align: center;
+  width: 25%;
+}
+
+.reason__logo {
+  margin-bottom: 30px;
+}
+
+.reason__num {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.36;
+  color: #4e5665;
+  margin-bottom: 5px;
+}
+
+.reason__type {
+  color: #505050;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .reason {
+    padding: 50px 0px;
+  }
+  .reason__title {
+    margin-bottom: 20px;
+  }
+  .block__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reason__row-top {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .reason__stat {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .reason__item {
+    width: 33.333%;
+    margin-bottom: 50px;
+  }
+  .reason__item:last-child {
+    margin: 0;
+  }
+}
+
+@media (max-width: 577px) {
+  .reason__item {
+    width: 50%;
+  }
+  .reason__item:nth-child(3) {
+    margin: 0;
+  }
+  .reason__logo {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .reason__item {
+    width: 100%;
+  }
+  .reason__item:nth-child(3) {
+    margin-bottom: 30px;
   }
 }
