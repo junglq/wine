@@ -3,3 +3,31 @@ $color-title: #4e5665;
 $color-text: #505050;
 $color-bordo: #8c001a;
 $color-white: #fff;
+
+.block__row {
+	display: flex;
+	justify-content: space-between;
+}
+.block__title {
+	font-size: 32px;
+	color: $color-title;
+	font-family: "Georgia";
+	margin-bottom: 20px;
+}
+.block__wrap {
+	max-width: 536px;
+}
+.block__text {
+	line-height: 1.75;
+	font-size: 16px;
+}
+.block__link {
+	line-height: 1.75;
+	font-size: 16px;
+	color: $color-bordo;
+	font-weight: 700;
+	transition: all 0.3s linear 0s;
+	&:hover {
+		opacity: 0.7;
+	}
+}

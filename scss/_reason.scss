@@ -4,32 +4,6 @@
 .reason__row-top {
 	margin-bottom: 140px;
 }
-.block__row {
-	display: flex;
-	justify-content: space-between;
-}
-.reason__title {
-	font-size: 32px;
-	color: $color-title;
-	font-family: "Georgia";
-}
-.reason__block {
-	max-width: 536px;
-}
-.reason__text {
-	line-height: 1.75;
-	font-size: 16px;
-}
-.reason__link {
-	line-height: 1.75;
-	font-size: 16px;
-	color: $color-bordo;
-	font-weight: 700;
-	transition: all 0.3s linear 0s;
-	&:hover {
-		opacity: 0.7;
-	}
-}
 .reason__stat {
 	display: flex;
 	justify-content: space-around;
@@ -42,7 +16,8 @@
 .reason__logo {
 	margin-bottom: 30px;
 }
-.reason__info {
+.reason__title {
+	max-width: 304px;
 }
 .reason__num {
 	font-weight: 700;
@@ -61,7 +36,7 @@
 		padding: 50px 0px;
 	}
 	.reason__title {
-		margin-bottom: 20px;
+		max-width: none;
 	}
 	.block__row {
 		flex-direction: column;
