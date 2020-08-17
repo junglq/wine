@@ -46,7 +46,10 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+	.intro {
+		margin-top: 50px;
+	}
 	.intro__title {
 		font-size: 130px;
 		margin: auto;
