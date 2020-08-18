@@ -455,6 +455,9 @@ body {
   .header__menu.active {
     right: 0%;
   }
+  .header__link {
+    padding: 0 !important;
+  }
 }
 
 .intro {
