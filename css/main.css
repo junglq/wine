@@ -730,4 +730,115 @@ body {
   .about__row {
     margin-bottom: 70px;
   }
+  .about__block-second {
+    max-width: 390px;
+  }
+}
+
+@media (max-width: 900px) and (max-width: 576px) {
+  .about__block {
+    max-width: 330px;
+  }
+}
+
+.example__title {
+  margin-bottom: 60px;
+}
+
+.example__bottle {
+  text-align: center;
+  position: relative;
+}
+
+.example__photo {
+  max-width: 100%;
+  height: auto;
+}
+
+.example__wrap {
+  position: absolute;
+}
+
+.example__dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(140, 0, 26, 0.75);
+  position: absolute;
+  cursor: pointer;
+}
+
+.example__dot:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #8c001a;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.example__dot:hover + p {
+  opacity: 1;
+}
+
+.example__dot-text {
+  position: absolute;
+  top: -140px;
+  left: 140px;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.75;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear 0.3s;
+  transition: all 0.3s linear 0.3s;
+}
+
+.example__dot-text:after {
+  content: "";
+  display: block;
+  background: url(../images/bottle-line.svg) no-repeat;
+  position: absolute;
+  right: -30px;
+  width: 244px;
+  height: 122px;
+}
+
+.example__wrap-1 {
+  top: 54%;
+  left: 49%;
+}
+
+.example__wrap-2 {
+  bottom: 31%;
+  right: 43%;
+}
+
+.example__wrap-3 {
+  bottom: 18%;
+  left: 40%;
+}
+
+.example__wrap-3 .example__dot-text {
+  left: -223px;
+}
+
+.example__wrap-3 .example__dot-text:after {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  right: -140px;
+}
+
+@media (max-width: 767px) {
+  .example__title {
+    margin-bottom: 20px;
+  }
+  .example__wrap {
+    display: none;
+  }
 }

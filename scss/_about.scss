@@ -62,4 +62,12 @@
 	.about__row {
 		margin-bottom: 70px;
 	}
+	.about__block-second {
+		max-width: 390px;
+	}
+	@media (max-width: 576px) {
+		.about__block {
+			max-width: 330px;
+		}
+	}
 }
