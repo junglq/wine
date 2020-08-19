@@ -1,6 +1,7 @@
 .footer {
 	background-color: $color-bordo;
 	padding: 53px 0px 85px;
+	position: relative;
 }
 .container {
 }
@@ -57,6 +58,29 @@
 	transition: all 0.3s linear 0s;
 	&:hover {
 		opacity: 0.6;
+	}
+}
+
+.scroll-up {
+	position: fixed;
+	bottom: 50px;
+	right: -120%;
+	opacity: 0;
+	width: 43px;
+	height: 43px;
+	background: #fff;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 2px 3px 5px 0 rgba(0, 1, 1, 0.2);
+	z-index: 2;
+	transition: all 0.5s linear 0s;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&.show {
+		right: 30px;
+		opacity: 1;
 	}
 }
 

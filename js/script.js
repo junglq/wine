@@ -18,13 +18,32 @@ $(document).ready(function () {
         $('body').toggleClass('lock');
     })
 
+
     // Fixed Header
     let scrollOffset = $(window).scrollTop();
+    let arrow = $('.scroll-up');
     checkscroll(scrollOffset);
+    addArrow(scrollOffset);
+
 
     $(window).on('scroll resize', function () {
         scrollOffset = $(this).scrollTop();
         checkscroll(scrollOffset);
+        addArrow(scrollOffset);
+    })
+
+    function addArrow(scrollOffset) {
+        if (scrollOffset > 1000) {
+            arrow.addClass('show');
+        } else {
+            arrow.removeClass('show');
+        }
+    }
+
+    arrow.on('click', function () {
+        $("html,body").animate({
+            scrollTop: 0
+        }, 1000)
     })
 
     function checkscroll(scrollOffset) {

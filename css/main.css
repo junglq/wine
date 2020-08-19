@@ -1009,6 +1009,7 @@ body {
 .footer {
   background-color: #8c001a;
   padding: 53px 0px 85px;
+  position: relative;
 }
 
 .footer__inner {
@@ -1071,6 +1072,38 @@ body {
 
 .footer__link:hover {
   opacity: 0.6;
+}
+
+.scroll-up {
+  position: fixed;
+  bottom: 50px;
+  right: -120%;
+  opacity: 0;
+  width: 43px;
+  height: 43px;
+  background: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 3px 5px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 2px 3px 5px 0 rgba(0, 1, 1, 0.2);
+  z-index: 2;
+  -webkit-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.scroll-up.show {
+  right: 30px;
+  opacity: 1;
 }
 
 @media (max-width: 767px) {
