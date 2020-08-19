@@ -1,4 +1,17 @@
 $(document).ready(function () {
+    // Slider 
+    $('.photos__slider').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 700,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+    });
+
     // Burger menu
     $('.header__burger').on('click', function () {
         $('.header__burger,.header__menu').toggleClass('active');

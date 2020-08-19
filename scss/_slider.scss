@@ -17,6 +17,7 @@
 }
 /* Слайд */
 .slick-slide {
+	outline: none;
 }
 /* Слайд активный (показывается) */
 .slick-slide.slick-active {
@@ -49,7 +50,7 @@
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	bottom: 50px;
+	bottom: -10%;
 	& li {
 		margin-right: 10px;
 		&:last-child {
@@ -59,8 +60,7 @@
 }
 /* Активная точка */
 .slick-dots li.slick-active button {
-	background-color: red;
-	border-color: blue;
+	background-color: #40381f;
 }
 /* Элемент точки */
 .slick-dots li button {
@@ -68,9 +68,9 @@
 	display: block;
 	width: 15px;
 	height: 15px;
-	background-color: transparent;
+	background-color: #b1b1b1;
 	border-radius: 50%;
-	border: 2px solid $white;
+	border: none;
 	&:focus {
 		outline: none;
 	}

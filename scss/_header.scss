@@ -11,9 +11,20 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: white;
+		background-color: #fff;
 		transition: all 0.3s ease-in-out;
 		z-index: 3;
+	}
+}
+
+@media (min-width: 768px) {
+	.header.fixed {
+		&:before {
+			background-color: rgba($color: #000000, $alpha: 0.7);
+		}
+		& .header__link {
+			color: #fff !important;
+		}
 	}
 }
 

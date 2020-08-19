@@ -1,0 +1,35 @@
+.photos {
+	padding: 90px 0px;
+}
+
+.photos__inner {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 120px;
+}
+
+.photos__text {
+	max-width: 500px;
+}
+
+.photos__slider {
+	margin: 0 auto;
+	height: auto;
+	position: relative;
+}
+.photos__slider-item {
+	margin: 0 15px;
+	& img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+}
+
+@media (max-width: 900px) {
+	.photos__inner {
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 60px;
+	}
+}
