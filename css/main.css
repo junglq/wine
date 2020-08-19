@@ -595,7 +595,7 @@ body {
 
 @media (orientation: landscape) and (max-width: 896px) {
   .intro__title {
-    font-size: 80px;
+    font-size: 70px;
     margin: auto;
   }
 }
