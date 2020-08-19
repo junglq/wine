@@ -1102,7 +1102,7 @@ body {
 }
 
 .scroll-up.show {
-  right: 30px;
+  right: 20px;
   opacity: 1;
 }
 
@@ -1131,6 +1131,6 @@ body {
     width: 100%;
   }
   .scroll-up {
-    bottom: 30px;
+    bottom: 18px;
   }
 }
