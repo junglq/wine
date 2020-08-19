@@ -98,10 +98,6 @@ $(document).ready(function () {
                 if (animItemHeight > window.innerHeight) { // Если высота элемента больше высоты окна
                     animItemPoint = window.innerHeight - window.innerHeight / animStart;
                 }
-                console.log(pageYOffset);
-                console.log(animItemOffset);
-
-                console.log(animItemOffset + animItemHeight);
                 // прокрутили больше чем позиция элемента минус точка старта и прокрутили меньше чем позиция элемента плюс его высота
                 if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
                     animItem.classList.add('active');
