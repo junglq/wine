@@ -1104,6 +1104,37 @@ body {
 .scroll-up.show {
   right: 30px;
   opacity: 1;
+  -webkit-animation: up 1.5s linear infinite alternate;
+          animation: up 1.5s linear infinite alternate;
+}
+
+.scroll-up.show:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes up {
+  0% {
+    bottom: 50px;
+  }
+  50% {
+    bottom: 60px;
+  }
+  100% {
+    bottom: 50px;
+  }
+}
+
+@keyframes up {
+  0% {
+    bottom: 50px;
+  }
+  50% {
+    bottom: 60px;
+  }
+  100% {
+    bottom: 50px;
+  }
 }
 
 @media (max-width: 767px) {

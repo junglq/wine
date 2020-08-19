@@ -81,6 +81,21 @@
 	&.show {
 		right: 30px;
 		opacity: 1;
+		animation: up 1.5s linear infinite alternate;
+		&:hover {
+			animation-play-state: paused;
+		}
+	}
+	@keyframes up {
+		0% {
+			bottom: 50px;
+		}
+		50% {
+			bottom: 60px;
+		}
+		100% {
+			bottom: 50px;
+		}
 	}
 }
 
